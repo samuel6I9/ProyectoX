@@ -1,0 +1,195 @@
+/* DISEÑO GENERAL <link rel="stylesheet" href="diseño.css">  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Para que al hacer clic en los enlaces el salto sea suave */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #0d0d0d; /* Negro profundo */
+    color: #e0e0e0; /* Gris muy claro para lectura cómoda */
+    padding: 20px;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #0c0b0b;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #8b0000; /* Rojo óxido */
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #d32f2f; /* Rojo óxido brillante */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-style: italic;
+    color: #b0b0b0;
+}
+
+/* NAVEGACIÓN */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+    background-color: rgba(139, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* SECCIONES */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: #d32f2f;
+    border-left: 5px solid #d32f2f;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* TABLAS DE LIBROS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #262626;
+    border: none !important; /* Quita los bordes antiguos */
+}
+
+th {
+    background-color: #8b0000;
+    color: white;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+table img {
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+table img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* FICHAS DE LIBROS (ARTICLES) */
+article {
+    background-color: #262626;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+article h3 {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+article img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #8b0000;
+}
+
+article p strong {
+    color: #d32f2f;
+}
+
+/* BOTÓN VOLVER */
+a[href*="#"] {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a[href*="#"]:hover {
+    text-decoration: underline;
+}
+
+/* CONTACTO Y REDES */
+#ubicacion a img {
+    border: 3px solid #333;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+#redes\ sociales li, #Nuestros\ Generos li {
+    margin: 10px 0;
+}
+
+#redes\ sociales a {
+    color: #e0e0e0;
+    text-decoration: none;
+    background: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#redes\ sociales a:hover {
+    background: #8b0000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 20px 0;
+}
+
+/* Limpiar floats de las imágenes en artículos */
+article::after {
+    content: "";
+    clear: both;
+    display: table;
+}
